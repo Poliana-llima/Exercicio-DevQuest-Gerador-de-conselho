@@ -1,0 +1,65 @@
+body {
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope', cursive;
+    font-weight: 800;
+}
+
+.card-geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-geral .card-interno {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    width: 550px;
+    height: 320px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 15px;
+}
+
+.card-interno .titulo {
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+    margin-top: 35px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.card-interno .text-motivacao {
+    padding: 35px;
+    text-align: center;
+    font-size: 25px;
+    color: hsl(193, 38%, 86%);
+}
+
+.card-interno .btn-card {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    padding: 20px;
+    border: none;
+    transform: translateY(110%);
+    background-color: hsl(150, 100%, 66%);
+}
+
+.card-interno .btn-card:hover {
+    color:hsl(150, 100%, 66%);
+    cursor: pointer;
+    box-shadow: 0 0 30px 1px hsl(150, 100%, 66%);
+}
+
+@media (min-width: 768px) {
+    .card-interno {
+        width: 330px;
+    }
+
+    .card-interno p {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+}
